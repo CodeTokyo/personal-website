@@ -1,3 +1,17 @@
-// Place all the styles related to the StaticPages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+#header {
+  color: orange;
+  background-color: #774b4b;
+  margin: 10px;
+  padding: 10px 35px;
+  border: 10px solid black;
+  text-align: center;
+  /*Margin/Padding Rulea:*/
+  /*One Value is for all 4 Sides*/
+  /*Two values is for top/bottom and then right/left*/
+  /*Four values move clockwise staring from top*/
+
+}
+body {
+  color: orange;
+  background-color: black
+}

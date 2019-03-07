@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
-  get "/" => 'StaticPages#about'
+  get "/" => 'static_pages#about'
 
-  get "/about" => 'StaticPages#about'
+  get "/about" => 'static_pages#about'
 
-  get "/portfolio" => 'StaticPages#portfolio'
+  get "/portfolio" => 'static_pages#portfolio'
 
-  get "/contact" => 'StaticPages#contact'
+  get "/contact" => 'static_pages#contact'
 end
