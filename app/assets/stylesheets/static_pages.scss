@@ -1,6 +1,6 @@
 #header {
-  color: orange;
-  background-color: #774b4b;
+  color: white;
+  background-color: purple;
   margin: 10px;
   padding: 10px 35px;
   border: 10px solid black;
@@ -12,6 +12,54 @@
 
 }
 body {
-  color: orange;
-  background-color: black
+  color: white;
+  background-color: black;
+}
+
+.about-paragraph {
+  color: white;
+  background-color: purple;
+  text-align: center;
+}
+
+#navbar {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.nav-item {
+  display: inline-block;
+  /*margin-left: 9%;*/
+  /*margin-right: 9%;*/
+  /*OR*/
+  margin: 0 9%;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: black;
+  background-color: orange;
+  padding: 5px;
+  font-size: 2.25rem;
+  transition-duration: 1000ms;
+}
+
+
+.nav-item a:hover {
+  color: black;
+  background-color: white;
+  font-size: 1.4rem;
+  transition-duration: 500ms;
+}
+
+#about-img {
+  width: 30%;
+  margin: 0 5px;
+  float: right;
+}
+#about {
+  width: 25%;
+  display: inline-block;
 }
