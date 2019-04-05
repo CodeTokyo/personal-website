@@ -146,61 +146,46 @@
     </section>
 
     <!-- Contact Section -->
-    <section class="contact-section bg-black">
-      <div class="container">
-
-        <div class="row">
-
-          <div class="col-md-4 mb-3 mb-md-0">
-            <div class="card py-4 h-100">
-              <div class="card-body text-center">
-                <i class="fas fa-map-marked-alt text-primary mb-2"></i>
-                <h4 class="text-uppercase m-0">Address</h4>
-                <hr class="my-4">
-                <div class="small text-black-50">4923 Market Street, Orlando FL</div>
+           <div id="message-form" class="container">
+          <h1>Contact Us</h1>
+          <%= form_tag("/contact", novalidate: true, class: "needs-validation") do %>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="name">Name*</label>
+                  <input type="text" name="name" id="name" class="form-control required-field" placeholder="Required" required>
+                  <div class="invalid-feedback">
+                    Name is required.
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email*</label>
+                  <input type="text" name="email" id="email" class="form-control required-field" placeholder="Required" required>
+                  <div class="invalid-feedback">
+                    Email is required.
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="number">Number</label>
+                  <input type="text" name="number" id="number" class="form-control">
+                </div>
               </div>
-            </div>
-          </div>
-
-          <div class="col-md-4 mb-3 mb-md-0">
-            <div class="card py-4 h-100">
-              <div class="card-body text-center">
-                <i class="fas fa-envelope text-primary mb-2"></i>
-                <h4 class="text-uppercase m-0">Email</h4>
-                <hr class="my-4">
-                <div class="small text-black-50">
-                  <a href="#">hello@yourdomain.com</a>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="content">Message*</label>
+                  <textarea name="content" id="content" class="form-control required-field" style="height: 240px" placeholder="Required" required></textarea>
+                  <div class="invalid-feedback">
+                    Message is required.
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-
-          <div class="col-md-4 mb-3 mb-md-0">
-            <div class="card py-4 h-100">
-              <div class="card-body text-center">
-                <i class="fas fa-mobile-alt text-primary mb-2"></i>
-                <h4 class="text-uppercase m-0">Phone</h4>
-                <hr class="my-4">
-                <div class="small text-black-50">+1 (555) 902-8832</div>
-              </div>
+            <div class="text-center">
+              <input type="submit" value="Send Message" class="btn btn-primary" id="contact-button">
             </div>
-          </div>
+          <% end %>
         </div>
 
-        <div class="social d-flex justify-content-center">
-          <a href="#" class="mx-2">
-            <i class="fab fa-twitter"></i>
-          </a>
-          <a href="#" class="mx-2">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-          <a href="#" class="mx-2">
-            <i class="fab fa-github"></i>
-          </a>
-        </div>
-
-      </div>
-    </section>
 
     <!-- Footer -->
     <footer class="bg-black small text-center text-white-50">
