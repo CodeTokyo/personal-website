@@ -356,7 +356,3 @@ header .overlay {
     display: none;
   }
 }
-
-video {
-  filter:grayscale(100%)
-}
